@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4e73df, #1cc88a);
+            text-align: center;
+            padding: 40px;
+            color: white;
+        }
+
+        .container {
+            background: white;
+            color: black;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            margin: auto;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+        }
+
+        #box {
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+            line-height: 100px;
+            margin: 15px auto;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn1 { background-color: #4e73df; color: white; }
+        .btn2 { background-color: #e74a3b; color: white; }
+        .btn3 { background-color: #f6c23e; }
+        .btn4 { background-color: #858796; color: white; }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>DOM Manipulation using JavaScript</h1>
+
+    <div class="container">
+        <h2 id="heading">Welcome Student</h2>
+
+        <p id="para">This is a simple DOM manipulation example.</p>
+
+        <div id="box">Sample Box</div>
+
+        <button class="btn1" onclick="changeContent()">Change Content</button>
+        <button class="btn2" onclick="changeStyle()">Change Style</button>
+        <button class="btn3" onclick="toggleBox()">Show / Hide</button>
+        <button class="btn4" onclick="resetAll()">Reset</button>
+    </div>
+
+    <script>
+        function changeContent() {
+            document.getElementById("heading").innerHTML = "Content Changed Successfully!";
+            document.getElementById("para").innerHTML = "JavaScript makes web pages interactive and dynamic.";
+        }
+
+        function changeStyle() {
+            let p = document.getElementById("para");
+            p.style.color = "white";
+            p.style.backgroundColor = "green";
+            p.style.padding = "10px";
+            p.style.borderRadius = "5px";
+        }
+
+        function toggleBox() {
+            let box = document.getElementById("box");
+            if (box.style.display === "none") {
+                box.style.display = "block";
+            } else {
+                box.style.display = "none";
+            }
+        }
+
+        function resetAll() {
+            location.reload();
+        }
+    </script>
+
+</body>
+</html>

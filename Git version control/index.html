@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git version control</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cosmic Background -->
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    
+    <!-- Floating Navigation -->
+    <nav class="cosmic-nav">
+        <div class="logo">
+            <i class="fas fa-rocket"></i>
+            <span>CosmicStudio</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#connect">Connect</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Effect -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Cosmic Creator">Cosmic Creator</h1>
+            <p class="typewriter">Crafting digital universes through code & creativity</p>
+            <div class="cta-buttons">
+                <button class="btn primary" id="exploreBtn">
+                    <i class="fas fa-compass"></i> Explore Universe
+                </button>
+                <button class="btn secondary" id="playBtn">
+                    <i class="fas fa-play"></i> Watch Showreel
+                </button>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape" data-speed="2"></div>
+            <div class="shape" data-speed="5"></div>
+            <div class="shape" data-speed="3"></div>
+        </div>
+    </section>
+
+    <!-- Creative Work Showcase -->
+    <section id="work" class="work-section">
+        <h2 class="section-title"> <i class="fas fa-crown"></i> Galactic Projects</h2>
+        <div class="work-grid">
+            <div class="work-item" data-category="web">
+                <div class="work-card">
+                    <div class="work-front">
+                        <i class="fas fa-code"></i>
+                        <h3>Nebula Store</h3>
+                        <p>E-commerce Platform</p>
+                    </div>
+                    <div class="work-back">
+                        <p>React • Node.js • MongoDB</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 2.3k</span>
+                            <span><i class="fas fa-code-branch"></i> 156</span>
+                        </div>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item" data-category="mobile">
+                <div class="work-card">
+                    <div class="work-front">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>StarWalker AR</h3>
+                        <p>AR Navigation App</p>
+                    </div>
+                    <div class="work-back">
+                        <p>Swift • ARKit • Firebase</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-download"></i> 50k+</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item" data-category="design">
+                <div class="work-card">
+                    <div class="work-front">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Cosmic AI</h3>
+                        <p>AI Art Generator</p>
+                    </div>
+                    <div class="work-back">
+                        <p>Python • TensorFlow • GANs</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-heart"></i> 10k+</span>
+                            <span><i class="fas fa-magic"></i> AI</span>
+                        </div>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item" data-category="game">
+                <div class="work-card">
+                    <div class="work-front">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Galaxy Quest</h3>
+                        <p>Web3 Game</p>
+                    </div>
+                    <div class="work-back">
+                        <p>Unity • Web3 • Blockchain</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-users"></i> 100k+</span>
+                            <span><i class="fas fa-trophy"></i> #1</span>
+                        </div>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Skills Universe -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title"><i class="fas fa-atom"></i> Tech Universe</h2>
+        <div class="skills-container">
+            <div class="skill-planet" data-skill="html">
+                <i class="fab fa-html5"></i>
+                <span class="skill-name">HTML5</span>
+                <div class="orbit"></div>
+            </div>
+            <div class="skill-planet" data-skill="css">
+                <i class="fab fa-css3-alt"></i>
+                <span class="skill-name">CSS3</span>
+                <div class="orbit"></div>
+            </div>
+            <div class="skill-planet" data-skill="js">
+                <i class="fab fa-js"></i>
+                <span class="skill-name">JavaScript</span>
+                <div class="orbit"></div>
+            </div>
+            <div class="skill-planet" data-skill="react">
+                <i class="fab fa-react"></i>
+                <span class="skill-name">React</span>
+                <div class="orbit"></div>
+            </div>
+            <div class="skill-planet" data-skill="node">
+                <i class="fab fa-node-js"></i>
+                <span class="skill-name">Node.js</span>
+                <div class="orbit"></div>
+            </div>
+            <div class="skill-planet" data-skill="python">
+                <i class="fab fa-python"></i>
+                <span class="skill-name">Python</span>
+                <div class="orbit"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Timeline Journey -->
+    <section id="journey" class="journey-section">
+        <h2 class="section-title"><i class="fas fa-space-shuttle"></i> Cosmic Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-year="2024">
+                <div class="timeline-content">
+                    <h3>Galactic Launch</h3>
+                    <p>Started Cosmic Creative Studio</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-year="2023">
+                <div class="timeline-content">
+                    <h3>AI Explorer</h3>
+                    <p>Developed Cosmic AI Generator</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-year="2022">
+                <div class="timeline-content">
+                    <h3>Web3 Pioneer</h3>
+                    <p>Launched first blockchain game</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect Section with Interactive Form -->
+    <section id="connect" class="connect-section">
+        <h2 class="section-title"><i class="fas fa-satellite"></i> Beam Me Up</h2>
+        <div class="connect-container">
+            <form id="cosmicForm" class="cosmic-form">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Cosmic Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Interstellar Message</label>
+                </div>
+                <button type="submit" class="btn primary" id="sendMessage">
+                    <i class="fas fa-paper-plane"></i> Send Signal
+                </button>
+            </form>
+            <div class="social-constellation">
+                <a href="#" class="social-star"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-star"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-star"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-star"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-star"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Player (Creative Touch) -->
+    <div class="music-player" id="musicPlayer">
+        <button id="playMusic" class="music-btn">
+            <i class="fas fa-music"></i>
+        </button>
+        <div class="equalizer">
+            <span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
